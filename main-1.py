@@ -1,4 +1,4 @@
- #------------------------------------------Trabalho Prático I de Estatística e Probabilidade----------------------------------------------------#
+#------------------------------------------Trabalho Prático I de Estatística e Probabilidade----------------------------------------------------#
 #----------------------------------------Engenharia de Computação - Campus Coração Eucarístico--------------------------------------------------#
 #-------------------------------------------------- PMG - Noite - G1/T1 - 2024/2----------------------------------------------------------------#
 #---------------------------------------------------------Turma 82.27.101-----------------------------------------------------------------------#
@@ -887,13 +887,23 @@ def quest_10():
   df2 = data_upload_excel()
   #ou MySQL:
   #df3=data_upload_mysql()
-
+#----------------------------------------------------->Revisão Gabriel - Inicio
   st.write("Exemplo de HeatMap em Tabela")
-  dataframe = df2.loc[:, ['work_year','employment_type']]
+  st.write("salary_in_usd x salary x work_year x remote_ratio")
+  dataframe = df2.loc[:, ['salary_in_usd','salary','remote_ratio','work_year']]
+  boundaries=[0.0,0.05,0.1,0.25,0.5,0.75,0.9,1.0]
+  hex_colors=sns.light_palette('navy',n_colors=len(boundaries)*2+2, as_cmap=False)
+  hex_colors=[hex_colors[i] for i in range(0,len(hex_colors),2)]
+  colors=list(zip(boundaries,hex_colors))
+  from matplotlib.colors import LinearSegmentedColormap
+  custom_color_map=LinearSegmentedColormap.from_list(
+    name='custom_navy',
+    colors=colors,
+  )
   fig,ax=plt.subplots()
-  sns.heatmap(dataframe.corr(),ax=ax)
+  sns.heatmap(dataframe.corr(),annot=True,ax=ax,cmap=custom_color_map)
   st.write(fig)
-
+#----------------------------------------------------->Revisão Gabriel - Fim
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------------#
