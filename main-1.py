@@ -3,13 +3,14 @@
 #-------------------------------------------------- PMG - Noite - G1/T1 - 2024/2----------------------------------------------------------------#
 #---------------------------------------------------------Turma 82.27.101-----------------------------------------------------------------------#
 #------------------------------------------------Alunos: Bruno Henrique Reis Almeida------------------------------------------------------------#
-#----------------------------------------------------Cleber Marcos Pereira dos Reis-------------------------------------------------------------#
 #------------------------------------------------------Gabriel da Silva Cassino-----------------------------------------------------------------#
 #-----------------------------------------------Luiz Henrique Miranda Pacheco de Castro---------------------------------------------------------#
 #-----------------------------------------------------------Orientações: -----------------------------------------------------------------------#
 
 #Criado: 31-08-2024
 #Revisao: 1_20_09_2024
+
+#Desenvolvido por Bruno Henrique Almeida Reis e Gabriel da Silva Cassino
 
 #----->Instale o StreamLit:
 #-->rode por favor pip install streamlit
@@ -887,8 +888,11 @@ def quest_10():
   #ou MySQL:
   #df3=data_upload_mysql()
 
-
-  #data = df2['work_year'].correc(df2['employment_type'])
+  st.write("Exemplo de HeatMap em Tabela")
+  dataframe = df2.loc[:, ['work_year','employment_type']]
+  fig,ax=plt.subplots()
+  sns.heatmap(dataframe.corr(),ax=ax)
+  st.write(fig)
 
 
 
