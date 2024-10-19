@@ -874,11 +874,7 @@ Cite uma situação hipotética em que o gráfico de linhas seria adequado para 
 
 
 def quest_10():
-  st.write("""Questão 10
-\n Pesquise a respeito do uso de mapa de calor em tabelas. Quando ele deve ser usado? Qual sua 
-
-\n utilidade/benefícios? Mostre um exemplo hipotético.""")
-  st.write()
+  st.write("""Questão 10\n Pesquise a respeito do uso de mapa de calor em tabelas. Quando ele deve ser usado? Qual sua utilidade/benefícios? Mostre um exemplo hipotético.\n""")
   st.write("""Um heatmap (ou mapa de calor) é uma representação gráfica de dados onde os valores são representados por cores.\nNesse sentido, esse recurso gráfico é usado para detectar a ocorrência ou não de um determinado comportamento de um dado em análise (tendências, padrões, anomalias), tornando visíveis os pontos onde há engajamento.\nNesse sentido, os mapas de calor em tabelas facilitam a visualização de dados complexos, onde existem muitos números, que podem ser difíceis de compreender à primeira vista.""")
   st.write("""Por exemplo, as equipes de produtos de um site podem usar os mapas de calor para testar como os usuários estão interagindo com um novo recurso ou priorizar correções de bugs, enquanto os designers de UX e UI podem usar os mapas de calor para medir a popularidade ou a aversão ao design de uma página e implementar alterações que facilitem a navegação dos clientes em seu site.(Hotjar, 2024)""")
 
