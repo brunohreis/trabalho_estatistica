@@ -1,4 +1,4 @@
-## **[Read our README in Brazilian Portuguese](https://github.com/brunohreis/trabalho_estatistica/README.md)**
+## **[Read our README in Brazilian Portuguese](https://github.com/brunohreis/trabalho_estatistica/blob/master/README.md)**
  (Leia nosso README em Português-Brasil)
 
 # Repository of Statistics Practical Exercise 2024-2
