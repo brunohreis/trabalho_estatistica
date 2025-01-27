@@ -1,4 +1,4 @@
-##  **[Read our README in English-US](https://github.com/brunohreis/trabalho_estatistica/README_EN-US.md)**
+##  **[Read our README in English-US](https://github.com/brunohreis/trabalho_estatistica/blob/master/README_EN-US.md)**
  (Leia nosso README em Inglês)
 
 # Repositório Trabalho de Estatística 2024-2 
